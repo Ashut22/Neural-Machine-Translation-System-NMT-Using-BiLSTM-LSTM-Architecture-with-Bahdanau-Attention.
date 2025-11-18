@@ -10,7 +10,7 @@ The system trains on parallel corpora and performs end-to-end translation throug
 - Vocabulary creation with `<PAD>`, `<SOS>`, `<EOS>` tokens  
 - Encoder: 3-layer BiLSTM with 128-dimensional embeddings  
 - Decoder: 3-layer LSTM with Bahdanau Attention  
-- Teacher forcing training strategy with gradient clipping  
+- Teacher-forcing training strategy with gradient clipping  
 - Greedy decoding for translation generation  
 - Support for both English–Hindi and English–Bengali datasets
 
@@ -20,6 +20,10 @@ The system trains on parallel corpora and performs end-to-end translation throug
 - Learning rate: 1e-3 (Adam optimizer)  
 - Loss function: Negative Log-Likelihood  
 - Teacher Forcing Ratio: 1.0  
+
+## Dataset
+Parallel corpora (training + test) are available at Google Drive:  
+[Dataset: Train-Test Data](https://drive.google.com/drive/folders/1g9iggCOVsxfIN14i9cIF0PH9ts74hhb0?usp=sharing)
 
 ## Results
 - CHRF++: 0.30  
